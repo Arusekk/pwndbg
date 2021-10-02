@@ -32,3 +32,5 @@ jobs:
     - name: Run tests
       run: |
         PWNDBG_GITHUB_ACTIONS_TEST_RUN=1 sudo --preserve-env ./tests.sh
+        coverage combine
+        # coveralls  ## XXX set up coveralls.io like pwntools?
